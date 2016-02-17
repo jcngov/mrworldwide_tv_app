@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160217002418) do
     t.string   "title"
     t.string   "album"
     t.string   "featured_artists"
+    t.string   "tag"
     t.date     "released_on"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false

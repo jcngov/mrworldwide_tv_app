@@ -5,6 +5,7 @@ class CreateVideos < ActiveRecord::Migration
       t.string :title
       t.string :album
       t.string :featured_artists
+      t.string :tag
       t.date :released_on
 
       t.timestamps null: false
