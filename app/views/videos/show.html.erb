@@ -1,0 +1,7 @@
+<h1> <%= @video.title %> </h1>
+
+<%= link_to "Video Link", @video.youtube_link %></h4>
+<iframe class="video-embed" src="<%= @video.embed_link %>" frameborder="0" allowfullscreen></iframe>
+
+
+<%= @video.released_on %>

@@ -1,13 +1,12 @@
 
-<header>
-  <h1>Mr. Worldwide TV</h1>
-  <h3>Dale!</h3>
-</header>
 <main>
   <% @videos.each do |video| %>
   <article>
   <h4> <%= link_to video.title, video.youtube_link %></h4>
-  <%= raw video.embed %>
+  <iframe class="video-embed" src="<%= video.embed_link %>" frameborder="0" allowfullscreen></iframe>
   </article>
+  <%= link_to "Show", video %>
+  <%= link_to "Edit", edit_path(video.id) %>
+
   <% end %>
 </main>
